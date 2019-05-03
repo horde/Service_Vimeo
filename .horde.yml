@@ -2,7 +2,7 @@
 id: Service_Vimeo
 name: Service_Vimeo
 full: Vimeo client library
-description: Client libraries for the Vimeo API.
+description: A client library for the Vimeo API.
 list: dev
 type: library
 authors:
