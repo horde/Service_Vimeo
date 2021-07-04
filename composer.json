@@ -1,5 +1,5 @@
 {
-    "name": "horde/service-vimeo",
+    "name": "horde/service_vimeo",
     "description": "Vimeo client library",
     "type": "library",
     "homepage": "https://www.horde.org",
@@ -11,22 +11,20 @@
             "role": "lead"
         }
     ],
-    "version": "1.0.0alpha1",
-    "time": "2017-11-11",
+    "time": "2021-07-04",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com/"
         }
     ],
     "require": {
-        "php": "^5.3 || ^7",
-        "pear-pear.horde.org/Horde_Http": "^2"
+        "php": "^7",
+        "horde/http": "^3",
+        "horde/exception": "^3"
     },
-    "replace": {
-        "pear-pear.horde.org/Horde_Service_Vimeo": "1.*",
-        "pear-horde/Horde_Service_Vimeo": "1.*"
-    },
+    "require-dev": {},
+    "suggest": {},
     "autoload": {
         "psr-0": {
             "Horde_Service_Vimeo": "lib/"
