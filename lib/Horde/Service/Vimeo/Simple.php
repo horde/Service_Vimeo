@@ -1,17 +1,18 @@
 <?php
+
 /**
  * Horde_Serivce_Vimeo_Simple:: wrapper around Vimeo's (http://www.vimeo.com)
  * Simple API.
  *
- * Copyright 2008-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2008-2026 Horde LLC (http://www.horde.org/)
  *
  * @author Michael J. Rubinsky <mrubinsk@horde.org>
  * @license  http://www.horde.org/licenses/bsd BSD
  * @category Horde
  * @package  Service_Vimeo
  */
-class Horde_Service_Vimeo_Simple extends Horde_Service_Vimeo {
-
+class Horde_Service_Vimeo_Simple extends Horde_Service_Vimeo
+{
     // The vimeo simple api endpoint
     protected $_api_endpoint = 'http://www.vimeo.com/api';
 
@@ -28,10 +29,10 @@ class Horde_Service_Vimeo_Simple extends Horde_Service_Vimeo {
     protected $_type;
 
     // Valid method/type map
-    protected $_methodTypes = array('user' => array('clips', 'likes', 'info', 'appears_in', 'all_clips', 'subscriptions', 'albums', 'channels', 'groups', 'contacts_clips', 'contacts_like'),
-                                    'group' => array('clips', 'users', 'info'),
-                                    'channel' => array('clips', 'info'),
-                                    'album' => array('clips', 'info'));
+    protected $_methodTypes = ['user' => ['clips', 'likes', 'info', 'appears_in', 'all_clips', 'subscriptions', 'albums', 'channels', 'groups', 'contacts_clips', 'contacts_like'],
+        'group' => ['clips', 'users', 'info'],
+        'channel' => ['clips', 'info'],
+        'album' => ['clips', 'info']];
 
 
     /**
@@ -56,13 +57,13 @@ class Horde_Service_Vimeo_Simple extends Horde_Service_Vimeo {
 
             // Build a valid identifier
             switch ($name) {
-            case 'user':
-                // user is the default type for a Vimeo simple query
-                $this->_identifier = $args[0];
-                break;
-            default:
-                $this->_identifier = '/' . $name . '/' . $args[0];
-                break;
+                case 'user':
+                    // user is the default type for a Vimeo simple query
+                    $this->_identifier = $args[0];
+                    break;
+                default:
+                    $this->_identifier = '/' . $name . '/' . $args[0];
+                    break;
             }
 
             return $this;

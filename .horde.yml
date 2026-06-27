@@ -6,8 +6,7 @@ description: A client library for the Vimeo API.
 list: dev
 type: library
 authors:
-  -
-    name: Michael J. Rubinsky
+  - name: Michael J. Rubinsky
     user: mrubinsk
     email: mrubinsk@horde.org
     active: true
@@ -27,3 +26,11 @@ dependencies:
     composer:
       horde/http: ^3
       horde/exception: ^3
+keywords: null
+vendor: horde
+ci-platform:
+  '8.6':
+    - php: ^7 || ^8
+    - ext-dom
+ci-platform-flags:
+  needs_installer_plugin: false

@@ -1,17 +1,18 @@
 <?php
+
 /**
  * Horde_Serivce_Vimeo:: wrapper around Vimeo's (http://www.vimeo.com)
  * API.
  *
- * Copyright 2008-2017 Horde LLC (http://www.horde.org/)
+ * Copyright 2008-2026 Horde LLC (http://www.horde.org/)
  *
  * @author Michael J. Rubinsky <mrubinsk@horde.org>
  * @license  http://www.horde.org/licenses/bsd BSD
  * @category Horde
  * @package  Service_Vimeo
  */
-class Horde_Service_Vimeo {
-
+class Horde_Service_Vimeo
+{
     /**
      * The format of the data returned from Vimeo.
      * Obviously does not apply to the getEmbedJson() method.
