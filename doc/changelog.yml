@@ -1,0 +1,31 @@
+---
+1.0.0:
+  api: 1.0.0
+  state:
+    release: stable
+    api: stable
+  date: 2026-06-27
+  license:
+    identifier: BSD-2-Clause
+    uri: https://spdx.org/licenses/BSD-2-Clause.html
+  notes: "chore: refresh qc fixes and platform deps\nchore: Update workflow dependency\nAdd CI job for satis repo update\nDevelopment mode for Service_Vimeo-1.0.0alpha3"
+1.0.0alpha2:
+  api: 1.0.0
+  state:
+    release: alpha
+    api: alpha
+  date: 2021-07-04
+  license:
+    identifier: BSD-2-Clause
+    uri: http://www.horde.org/licenses/bsd
+  notes: ''
+1.0.0alpha1:
+  api: 1.0.0
+  state:
+    release: beta
+    api: beta
+  date: 2021-07-04
+  license:
+    identifier: BSD-2-Clause
+    uri: http://www.horde.org/licenses/bsd
+  notes: "[rla] Package for H6 / composer installer.\n[jan] Mark PHP 7 as supported.\n"
